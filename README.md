@@ -55,12 +55,12 @@ want to use in the project that inspired me to write this guide.
 Of course, you can use whatever sensors you want, but in the code examples shown here I am going
 read temperature data from the sensor.
 
-[ardiuno_interval_1_bmp_sensor](/ardiuno_interval_1_bmp_sensor) contains the basic code for communicating with the sensor board
+[arduino_interval_1_bmp_sensor](/arduino_interval_1_bmp_sensor) contains the basic code for communicating with the sensor board
 using the I2C protocol and writing the values to the Serial Monitor.
 
-[Photo of Arduino Interval - Circuit 1](/images/arduino_interval_1_photo.png)
+[Photo of Arduino Interval - Circuit 1](images/arduino_interval_1_photo.png)
 
-[Layout of Arduino Interval - Circuit 1](/images/arduino_interval_1_layout.png)
+[Layout of Arduino Interval - Circuit 1](images/arduino_interval_1_layout.png)
 
 The code used here is pretty simple. There are some sensor board includes and defines at the start of the code.
 *sensorSetup()* and *sensorRead()* do what you expect. *flashOnboardLed()* flashes the onboard LED on the Arduino if
