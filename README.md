@@ -58,15 +58,15 @@ read temperature data from the sensor.
 [arduino_interval_1_bmp_sensor](/arduino_interval_1_bmp_sensor) contains the basic code for communicating with the sensor board
 using the I2C protocol and writing the values to the Serial Monitor.
 
-[Photo of Arduino Interval - Circuit 1](images/arduino_interval_1_photo.png)
+![Layout of Arduino Interval - Circuit 1](images/arduino_interval_1_layout.png)
 
-[Layout of Arduino Interval - Circuit 1](images/arduino_interval_1_layout.png)
+![Photo of Arduino Interval - Circuit 1](images/arduino_interval_1_photo.png)
 
 The code used here is pretty simple. There are some sensor board includes and defines at the start of the code.
-*sensorSetup()* and *sensorRead()* do what you expect. *flashOnboardLed()* flashes the onboard LED on the Arduino if
+**sensorSetup()** and **sensorRead()** do what you expect. **flashOnboardLed()** flashes the onboard LED on the Arduino if
 there is an error.
 
-The sensor is read every *intervalMilliSec* milliseconds and the result send to the Serial Monitor.
+The sensor is read every **intervalMilliSec** milliseconds and the result send to the Serial Monitor.
 
 The interval between reads is determined by this code.
 
@@ -76,12 +76,12 @@ The interval between reads is determined by this code.
       prevMilliSec = millis();
     }
 ```
-*millis()* returns the number of milliseconds that the program has been running.
-*prevMilliSec* is a variable that records when the last reading was taken.
-When the *millis()* value exceeds the interval then another reading is taken and *prevMilliSec* is reset.
+**millis()** returns the number of milliseconds that the program has been running.
+**prevMilliSec** is a variable that records when the last reading was taken.
+When the **millis()** value exceeds the interval then another reading is taken and **prevMilliSec** is reset.
 
 This is the basic way to handle intervals on the Arduino which allows you to perform other work.
-*delay()* also works but blocks other activity - so don't use this for anything significant.
+**delay()** also works but blocks other activity - so don't use this for anything significant.
 
 
 
