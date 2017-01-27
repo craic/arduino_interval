@@ -1,4 +1,4 @@
-#arduino_interval
+#Arduino Interval
 
 This project has the goal of collecting sensor measurements at specific intervals on the Arduino microcontroller platform.
 
@@ -46,7 +46,7 @@ I'll introduce each of these in turn.
 This is functionally equivalent to the Arduino Uno.
 
 
-*Sensor Measurement
+##Sensor Measurement
 
 Here I am using the BME280 temperature, humidity and pressure sensor on a breakout board
 from [Adafruit](https://www.adafruit.com/products/2652). This is a nice multiple sensor board that I
@@ -84,7 +84,7 @@ This is the basic way to handle intervals on the Arduino which allows you to per
 **delay()** also works but blocks other activity - so don't use this for anything significant.
 
 
-*Adafruit PowerBoost 500C Shield
+##Adafruit PowerBoost 500C Shield
 
 In order to power the system from a battery I am using the
  [Adafruit PowerBoost 500C Shield](https://www.adafruit.com/products/2078) with a 2000mAh LiPo battery.
@@ -99,10 +99,10 @@ This is a nice compact way to add battery power to an Arduino stack.
 
 
 
-*Using the SD card
+##Using the SD card
 
 
-*Using an External Interrupt
+##Using an External Interrupt
 
 We will use an External Interrupt to wake up the Arduino in the examples that follow. So it
 is important to understand how this type of Interrupt works.
