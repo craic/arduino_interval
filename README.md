@@ -42,9 +42,9 @@ I have wrapped up each of the components. I have also kept the actual sensor mea
 
 I'll introduce each of these in turn.
 
-*The Basic Platform
+**NOTE** I'm using an [Adafruit Metro 328](https://www.adafruit.com/products/2466) board.
+This is functionally equivalent to the Arduino Uno.
 
-Arduino + Adafruit PowerBoost 500C Shield + LiPo battery
 
 *Sensor Measurement
 
@@ -84,6 +84,18 @@ This is the basic way to handle intervals on the Arduino which allows you to per
 **delay()** also works but blocks other activity - so don't use this for anything significant.
 
 
+*Adafruit PowerBoost 500C Shield
+
+In order to power the system from a battery I am using the
+ [Adafruit PowerBoost 500C Shield](https://www.adafruit.com/products/2078) with a 2000mAh LiPo battery.
+
+In this configuration I am using the optional on/off switch to control power. For a more flexible approach
+take a look at [arduino_power](https://github.com/craic/arduino_power) - but here I want to keep things as
+simple as possible.
+
+This is a nice compact way to add battery power to an Arduino stack.
+
+![Photo of Arduino Interval - PowerBoost 500](images/arduino_interval_powerboost_photo.png)
 
 
 
