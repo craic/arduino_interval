@@ -98,8 +98,18 @@ This is a nice compact way to add battery power to an Arduino stack.
 ![Photo of Arduino Interval - PowerBoost 500](images/arduino_interval_powerboost_photo.png)
 
 
-
 ##Using the SD card
+
+The whole point of a battery powered system is to free yourself from a host computer, but in doing so
+you lose the serial connection and you need to add a way to record your measurements to a SD Memory Card.
+
+You might choose to use a small breakout board like [this one](https://www.adafruit.com/product/254) or
+an Arduino shield with an SD card adapter like the [Adafruit Datalogging Shield](https://www.adafruit.com/products/1141).
+
+Here I am using the shield - it is relatively bulky but stacks above the PowerBoost.
+
+![Photo of Arduino Interval - Circuit 2](images/arduino_interval_2_photo.png)
+
 
 
 ##Using an External Interrupt
